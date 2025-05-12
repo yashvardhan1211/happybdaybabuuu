@@ -145,7 +145,7 @@
             ctx.translate(point.x, point.y);
             ctx.scale(scale, scale);
             ctx.beginPath();
-            ctx.moveTo(300, 0);
+            ctx.moveTo(10, 0);
     	    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
             ctx.closePath();
             ctx.fill();
@@ -160,12 +160,12 @@
             ctx.fillStyle = color;
             ctx.translate(point.x, point.y);
             ctx.scale(scale, scale);
-            ctx.moveTo(300, 0);
+            ctx.moveTo(10, 0);
     	    ctx.lineTo(15, 15);
     	    ctx.lineTo(130, 15);
             ctx.stroke();
 
-            ctx.moveTo(300, 0);
+            ctx.moveTo(10, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
             ctx.fillText("Click Me:) ", 30, -5);
@@ -205,7 +205,7 @@
             ctx.lineJoin = 'round';
             ctx.translate(point.x, point.y);
             ctx.beginPath();
-            ctx.moveTo(300, 0);
+            ctx.moveTo(10, 0);
     	    ctx.lineTo(len, 0);
     	    ctx.lineTo(-len, 0);
             ctx.stroke();
@@ -504,7 +504,7 @@ Tree = function(canvas, width, height, opt) {
             ctx.scale(s.scale, s.scale);
             ctx.rotate(s.angle);
             ctx.beginPath();
-            ctx.moveTo(300, 0);
+            ctx.moveTo(10, 0);
             for (var i = 0; i < figure.length; i++) {
                 var p = figure.get(i);
                 ctx.lineTo(p.x, -p.y);
